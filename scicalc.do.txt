@@ -193,4 +193,14 @@ Write a program that converts any number to the corresponding amount of moles. P
 Now write a calculator that takes a number of moles as input and prints how many molecules this equals.
 !esubex
 
-Testline
+===== Exercise: Inches to centimeters =====
+label{ex:inch2cm}
+keywords=basic; calculators; variables; length;
+
+!bsubex
+Imperial units are commonly used in USA outside of scientific work. $1cm = 0.394 inches$. Write a calculator program that prints the amount in centimeters in 1 inch along with an appropriate text.
+!esubex
+
+!bsubex
+Now write a program that calculates from inches to centimeters.
+!esubex
