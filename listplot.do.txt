@@ -1,0 +1,58 @@
+===== Exercise: List operations =====
+label{ex:numbersinlists}
+keywords=lists; basic;
+
+!bsubex
+Create a list called `mylist` and store the numbers 1, 2 and 4 in it.
+!esubex
+
+!bsubex
+Use the print function to print the number 1 by calling the correct index from the list.
+!esubex
+
+!bsubex
+Expand the list by adding the numbers 8, 16, 32, 64, 128 and 256.
+!esubex
+
+!bsubex
+Use the appropriate code for finding what the index number of the value 64 is, and print it to the screen.
+!esubex
+
+!bsubex
+Sum all the elements in the list and print it to the screen.
+!esubex
+
+===== Exercise: Mean from list =====
+label{ex:meanfromlist}
+keywords=lists; basic; statistics;
+
+!bsubex
+A group up students reported basic physical measurements. Create the following lists to store the information given:
+!bc pycod
+height = [176, 169, 172, 172, 179, 160, 157, 170, 190, 154, 181, 185, 168, 184]
+age = [34, 33, 27, 31, 19, 34, 22, 28, 23, 32, 20, 20, 24, 30, 21, 25]
+weight = [62, 46, 56, 52, 80, 51, 84, 65, 92, 55, 53, 52, 84, 84, 61]
+!ec
+!esubex
+
+!bsubex
+Write a program that prints the length of all the lists. If they do NOT all consist of 14 indices only, use the approriate method to delete the last indices of the lists that are longer than 14.
+!esubex
+
+!bsubex
+Write the sums of all the values in each list to separate variables.
+!bhint
+Name your variables in a way that makes their origin easy to identify. E.g `heightsum`, `agesum`, `weightsum`
+!ehint
+!esubex
+
+!bsubex
+Use the sums of the list indices to alculate the mean(average) height, age, and weight for this group of students.
+!bhint
+Using the length method from exercise b) can be helpful to make a flexible program.
+!ehint
+!esubex
+
+!bsubex
+How many of the students actually report having the average height, age or weight? Does this tell us anything about means in general?
+!esubex
