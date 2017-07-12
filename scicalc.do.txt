@@ -179,3 +179,16 @@ Make the program convert the contents of `seconds` to the correct amount of minu
 Converting between `int` and `float` might be necessary.
 !ehint
 !esubex
+
+===== Exercise: Moles =====
+label{ex:moles}
+keywords=basic; calculators; variables;
+
+!bsubex
+The mole is a unit used to denote an amount of small particles or molecules. It is equal to Avogadro's number. $1 mole = 6.022 * 10^{23}$
+Write a program that converts any number to the corresponding amount of moles. Print the answer along with a descriptive text string such as "`variable1` particles equals `number_of_moles` moles"
+!esubex
+
+!bsubex
+Now write a calculator that takes a number of moles as input and prints how many molecules this equals.
+!esubex
