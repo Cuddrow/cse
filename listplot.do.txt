@@ -22,7 +22,7 @@ Use the appropriate code for finding what the index number of the value 64 is, a
 Sum all the elements in the list and print it to the screen.
 !esubex
 
-===== Exercise: Mean from list =====
+===== Exercise: Simple statistics =====
 label{ex:meanfromlist}
 keywords=lists; basic; statistics;
 
