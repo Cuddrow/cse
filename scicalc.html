@@ -1,0 +1,434 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+
+<title></title>
+
+
+<style type="text/css">
+/* blueish style */
+
+/* Color definitions:  http://www.december.com/html/spec/color0.html
+   CSS examples:       http://www.w3schools.com/css/css_examples.asp */
+
+body {
+  margin-top: 1.0em;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, FreeSans, san-serif;
+  color: #000000;
+}
+h1 { font-size: 1.8em; color: #1e36ce; }
+h2 { font-size: 1.6em; color: #1e36ce; }
+h3 { font-size: 1.4em; color: #1e36ce; }
+a { color: #1e36ce; text-decoration:none; }
+tt { font-family: "Courier New", Courier; }
+/* pre style removed because it will interfer with pygments */
+p { text-indent: 0px; }
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+p.caption { width: 80%; font-style: normal; text-align: left; }
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+
+div { text-align: justify; text-justify: inter-word; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 2,
+ 'sections': [('Exercise 1: operations with variables',
+               2,
+               'ex:calculations',
+               'ex:calculations'),
+              ('Exercise 2: Flat surface area',
+               2,
+               'ex:geometry1',
+               'ex:geometry1'),
+              ('Exercise 3: Surface area of sphere',
+               2,
+               'ex:geometry2',
+               'ex:geometry2'),
+              ('Exercise 4: Heating water', 2, 'ex:heat2', 'ex:heat2'),
+              ('Exercise 5: Heat units', 2, 'ex:heat1', 'ex:heat1'),
+              ("Exercise 6: Volume of a sphere and Bergmann's rule",
+               2,
+               'ex:geometry4',
+               'ex:geometry4'),
+              ('Exercise 7: Time converter',
+               2,
+               'ex:timeconvert1',
+               'ex:timeconvert1'),
+              ('Exercise 8: Moles', 2, 'ex:moles', 'ex:moles'),
+              ('Exercise 9: Inches to centimeters',
+               2,
+               'ex:inch2cm',
+               'ex:inch2cm')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+    
+<!-- ------------------- main content ---------------------- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="ex:calculations">Exercise 1: operations with variables</h2>
+<!-- keywords = basic; variables -->
+
+<p>
+<b>a)</b>
+Store the integers 21 and 17 in the variables <code>number1</code> and <code>number2</code>. Store the <code>strings</code> "21" and "17" in the variables <code>string1</code> and <code>string2</code>. Now print each variable on a separate line. Is there an obvious difference between the printed sets of values?
+
+<p>
+<b>b)</b>
+Print the sum of <code>number1</code> and <code>number2</code>. Now print the sum of <code>string1</code> and <code>string2</code>. Do you get the same answer? What happens if you try to print the sum of <code>number1</code> and <code>string2</code>?
+
+<p>
+<b>c)</b>
+Store the sum of <code>number1</code> and <code>number2</code> in the variable <code>numbers_sum</code>. Now print the text "The sum of 21 and 17 is: " followed by the variable <code>numbers_sum</code>.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+Printing text, and numbers from floats or ints, requires type conversion so that everything printed is of the same type.
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="ex:geometry1">Exercise 2: Flat surface area</h2>
+<!-- keywords = basic; variables; geometry; calculators -->
+
+<p>
+<b>a)</b>
+Store the two dimensions of a flat surface in the variables <code>width</code> and <code>length</code>. Allow the width to be 0.1m and the length to be 0.5m. Caluclate the surface area using the formula width * length and print it along with the text "The surface area in m^2 is: "
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+Try manipulating the input values to see how the surface area changes.
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<b>b)</b>
+In molecular and cell biology the scale of meters is much too large to accurately describe events of interest. Instead, the unit of micrometers (or microns) is often used. A micrometer is one millionth of a meter, or simply \( 1*10^{-6} m \). Add a conversion step to your calculator that changes the final answer from meters to micrometers.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+Surface areas are given as squares(\( m^2 \)), which must be taken into account when converting between units. E.g \( 1m = 100cm \) but \( 1m^2 = 10000cm^2 \)
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="ex:geometry2">Exercise 3: Surface area of sphere</h2>
+<!-- keywords = basic; variables; geometry; calculators; bergmann -->
+
+<p>
+<b>a)</b>
+The surface area of a sphere is given by the formula \( 4*\pi*r^2 \) where r is the radius of the sphere. Create a calculator that calculates the surface area of a sphere, assuming a radius of \( 1m \) and \( \pi = 3.14 \). Have the calculator print the surface area in \( m^2 \) along with a descriptive output text such as "A sphere with r = <code>radius</code> has the surface area:".
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+Try changing the value of r in order to see how the surface area changes. Does it increase linearly with an increase in r?
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<b>b)</b>
+1$\mu m$ = \( 1*10^{-6}m \). A type of white blood cell called a lymphocyte has a diameter of somewhere between \( 7\mu m \) and \( 20\mu m \). Have your calculator convert an input of radius in meters to \( \mu m^2 \).
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+Take note that converting between volumes is different from converting between one dimensional units. E.g \( 10cm = 100mm \) but \( 10cm^3 = 10000mm^3 \)
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<b>c)</b>
+Finally, use python to calculate the surface area ratio between a very small lymphocyte of \( 7\mu m \) and a large one at \( 20\mu m \). Ratios are usually given as a unitless float. Choose appropriate text to print with your numbers.
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="ex:heat2">Exercise 4: Heating water</h2>
+<!-- keywords = basic; variables -->
+
+<p>
+<b>a)</b>
+1 calorie is the amount of energy needed to increase the temperature of 1g of water by 1 degree celcius. 1 calorie equals 4.184 joules. Make a calculator that converts a given amount of joules to calories and prints the result. Also, make a calculator that converts calories to joules.
+
+<p>
+<b>b)</b>
+The calorie is a very small unit, and although we in everyday speech indeed use the term "calories" when referring to the energy contents of food, the numbers we use and the numbers found on the back of food packaging, is that of kilocalories or kal. The relationship between a kcal, and a kjoule is the same as for calories and joules; 1 kcal = 4.184 kjoules. The relationship between kcal and water heating is also preserved, but upscaled; 1kcal heats 1000g of water by 1 degree celcius.
+
+<p>
+Write a program that can calculate how many joules are required to heat a full 10L bucket of water at sea level from 21 degrees celcius to boiling. Assume that the heat transfer is instantaneous, and that no heat is lost in the process.
+
+<p>
+<b>c)</b>
+Contrary to popular belief, animals of the genus <em>camelus</em>, such as camels and dromedarys, do not carry water in the "humps" on their backs. Although it is indeed true that they can drink and store large amounts of water, and survive for a long time without drinking, camels deal with the heat in much more interesting ways than one might expect. Two important adaptations in camels in order to deal with heat are a large body with concentrated fatty deposits in the "humps", and a high tolerance for changes in body temperature. The fat acts as a buffer that soaks thermal energy, causing the temperature rise in the body as a whole to be quite slow. During cold desert nights, the effect is reversed and the body is cooled more slowly. Allowing themselves to be heated reduced the thermal gradient against the environment, and thus the heating slows once the camel's body temperature rises.
+
+<p>
+Assume that a camel of 470kg receives a net heat gain averaging 90 \( \frac{joules}{second} \) throughout a day lasting 13.5 hours. Our camel consists of 55% water, and we will assume that the water is the only thing that affects body temperature. The camel starts out in the morning at a body temperature of 35.5 degrees celcius. Write a python program that calculates the final body temperature at the end of the day.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+You can convert the amount of joules per second to a total amount of calories for the whole day in order to simplify your calculations.
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<b>d)</b>
+The previous task was to design a program that models the body temperature of a camel given certain assumptions. Despite not being entirely realistic, how are models like these useful? How could we have improved the model to be more realistic?
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="ex:heat1">Exercise 5: Heat units</h2>
+<!-- keywords = basic; variables; thermal; geometry; calculators; bergmann -->
+
+<p>
+<b>a)</b>
+Watt is the unit for power, and it is commonly used to describe the output of motors, electrical devices and heat sources. One watt is one unit of energy (joule) per second; \( 1 Watt = 1 \frac{Joule}{second} \). Make a calculator that uses the variables <code>joules</code> and <code>seconds</code> to calculate an amount of watts. Choose values yourself.
+
+<p>
+<!-- The heat production value for the lymphocytes is adapted from PMID: 3996046 by Hoffner et al. -->
+<b>b)</b>
+In everyday life, watts are perhaps best known from such devices as power tools, stoves, cars (in terms of horse power) microwave ovens etc. However, it makes a lot of sense to use watts when doing calculations on energy in biology. Relevant examples are energy transfer, the biomechanics of movement and metabolism.
+
+<p>
+The metabolism of an imagined lymphocyte in a petri dish produces 30 picojoules of thermal energy per second $\frac{pJ}{s}$(\( 3*10^{-11}J/s \)). Make a calculator that calculates the amount of picoJoules produced per minute.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+Multiplying \( \frac{pJ}{s} \) by an amount of seconds leaves us with a a value given in \( pJ \).
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<b>c)</b>
+Our intuition often fails when working with very large, or very small, numbers. Make a calculator that converts 1 watt to it's corresponding value in milliwatts (mW), microwatts ($\mu W), nanowatts (nW), and picowatts. Have your program print all the different units. What happens when you convert very small or very large wattages to the smaller units, and vice versa?
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+1 milliwatt = \( 10^{-3}W \)
+1 microwatt = \( 10^{-6}W \)
+1 nanowatt = \( 10^{-9}W \)
+1 picowatt = \( 10^{-12}W \)
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<b>d)</b>
+Imagine that you were to make a 700 \( \frac{joules}{second} \) sandwich toaster that runs on energy from lymphocytes. The cells are growing in a nutritious medium that supplies an infinite amount of digestible substrate. Make a calculator that tells you how many cells are required to produce 700 watts of output energy. Consider all cells to be equal, and assume that all energy produced is given off to the environment as heat.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+You will need to convert the value in picoWatts to watts. \( 1 pW = 10^{-12} \)
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<b>e)</b>
+One horsepower roughly equals 746 watts or \( 746 \frac{joules}{second} \). Using the calculator from the previous task, calculate how many cells would be need to make a car that has 110 horsepower.
+
+<p>
+<b>f)</b>
+Making a piece of toast in your biotoaster requires a total of 102900 joules of energy to be transferred to the food. Adapt the calculator from the previous task so that it can calculate the amount of time it takes to cook the food to perfection. Print the time as an amount of minutes and seconds.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint 1.</b>
+You can use type conversion to change a <code>float</code> to an <code>int</code>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint 2.</b>
+Once you know how many minutes a given amount of seconds amount to, you can calculate the excess seconds.
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="ex:geometry4">Exercise 6: Volume of a sphere and Bergmann's rule</h2>
+<!-- keywords = basic; variables; thermal, geometry; calculators; bergmann -->
+
+<p>
+<b>a)</b>
+The volume of a sphere is given by the formula \( 4/3*\pi*r^3 \). Make a calculator that can calculate and print the volume of a sphere using a <code>diameter</code> of \( 0.5m \). Assume that \( \pi=3.14 \).
+
+<p>
+<b>b)</b>
+The surface area of a sphere is given by the formula \( 4*\pi*r^2 \). Add to the calculator from a), by making it print both the surface area and the volume of a sphere.
+
+<p>
+<b>c)</b>
+In 1847, the german biologist Carl Bergmann described a pattern which has since been named after him. "Bergmann's rule" states that animals of a certain species tend to be larger in colder climates. Although Bergmann's rule has been challenged and is far from a natural law, the rationale is simple: Heat is lost mainly as a function of surface area, but generated as a function of body volume. Using the calculator from the previous two tasks, print a variable that shows the ratio \( \frac{Surface Area}{Volume} \). What happens to this number if you keep increasing the radius of your sphere? What are the implications of this change in ratio?
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="ex:timeconvert1">Exercise 7: Time converter</h2>
+<!-- keywords = basic; variables; calculators; time; seconds -->
+
+<p>
+<b>a)</b>
+Create a program that stores the number 247 in a variable called <code>seconds</code> and prints it to the screen with an appropriate text.
+
+<p>
+<b>b)</b>
+Create a new variable called <code>minutes</code> and use the variable <code>seconds</code> along with the appropriate mathematical operation to calculate the amount of minutes in 247. Print the answer to the screen like this:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #BA2121">&quot;247 seconds equals X minutes&quot;</span>
+</pre></div>
+<p>
+What is the problem with this approach?
+
+<p>
+<b>c)</b>
+Make the program convert the contents of <code>seconds</code> to the correct amount of minutes <em>and</em> seconds.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<b>Hint.</b>
+Converting between <code>int</code> and <code>float</code> might be necessary.
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="ex:moles">Exercise 8: Moles</h2>
+<!-- keywords = basic; calculators; variables; -->
+
+<p>
+<b>a)</b>
+The mole is a unit used to denote an amount of small particles or molecules. It is equal to Avogadro's number. \( 1 mole = 6.022 * 10^{23} \)
+Write a program that converts any number to the corresponding amount of moles. Print the answer along with a descriptive text string such as "`variable1` particles equals <code>number_of_moles</code> moles"
+
+<p>
+<b>b)</b>
+Now write a calculator that takes a number of moles as input and prints how many molecules this equals.
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="ex:inch2cm">Exercise 9: Inches to centimeters</h2>
+<!-- keywords = basic; calculators; variables; length; -->
+
+<p>
+<b>a)</b>
+Imperial units are commonly used in USA outside of scientific work. \( 1cm = 0.394 inches \). Write a calculator program that prints the amount in centimeters in 1 inch along with an appropriate text.
+
+<p>
+<b>b)</b>
+Now write a program that calculates from inches to centimeters.
+
+<p>
+<!-- --- end exercise --- -->
+
+<!-- ------------------- end of main content --------------- -->
+
+
+</body>
+</html>
+    
+
