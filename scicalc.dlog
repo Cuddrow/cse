@@ -76,3 +76,42 @@ translating doconce text in scicalc.do.txt to html
     could be Problem (no refs beyond the exercise itself)
 found info about 9 exercises
 output in scicalc.html
+translating doconce text in scicalc.do.txt to ipynb
+
+*** Exercise: operations with variables
+    label{ex:calculations}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Flat surface area
+    label{ex:geometry1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Surface area of sphere
+    label{ex:geometry2}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Heating water
+    label{ex:heat2}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Heat units
+    label{ex:heat1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Volume of a sphere and Bergmann's rule
+    label{ex:geometry4}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Time converter
+    label{ex:timeconvert1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Moles
+    label{ex:moles}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Inches to centimeters
+    label{ex:inch2cm}
+    could be Problem (no refs beyond the exercise itself)
+found info about 9 exercises
+output in scicalc.ipynb

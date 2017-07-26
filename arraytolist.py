@@ -13,7 +13,7 @@ np.savetxt('randomlist.csv', mylist, delimiter=',')
 loadedlist = np.loadtxt('randomlist.csv', delimiter=',')
 print ("Contents of loadedlist as array object: " + str(loadedlist))
 
-#print(type(loadedlist))
+print(type(loadedlist))
 x = np.array(loadedlist).tolist()
 #print(type(loadedlist))
 print("Contents of loadedlist as list object: " + str(x))

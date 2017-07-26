@@ -1,9 +1,12 @@
-===== Exercise: List operations =====
+# Made by Hallvard Heiberg for the course BIOS1100
+
+
+===== Exercise: Power of 2 =====
 label{ex:numbersinlists}
 keywords=lists; basic;
 
 !bsubex
-Create a list called `mylist` and store the numbers 1, 2 and 4 in it.
+Create a list called `mylist` and store the numbers 0, 1 and 2 in it.
 !esubex
 
 !bsubex
@@ -11,7 +14,7 @@ Use the print function to print the number 1 by calling the correct index from t
 !esubex
 
 !bsubex
-Expand the list by adding the numbers 8, 16, 32, 64, 128 and 256.
+Expand the list by adding the numbers 4, 8, 16, 32, 64, 128 and 256.
 !esubex
 
 !bsubex
@@ -21,6 +24,22 @@ Use the appropriate code for finding what the index number of the value 64 is, a
 !bsubex
 Sum all the elements in the list and print it to the screen.
 !esubex
+
+===== Exercise: Exponential plotting =====
+
+!bsubex
+Create the following lists and check that their lengths are equal.
+
+!bc pycod
+binary = [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192]
+power = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+!ec
+!esubex
+
+!bsubex
+Plot the `binary` list as a function of the `power` list. What trend do we observe?
+!esubex
+
 
 ===== Exercise: Simple statistics =====
 label{ex:meanfromlist}
@@ -36,7 +55,7 @@ weight = [62, 46, 56, 52, 80, 51, 84, 65, 92, 55, 53, 52, 84, 84, 61]
 !esubex
 
 !bsubex
-Write a program that prints the length of all the lists. If they do NOT all consist of 14 indices only, use the approriate method to delete the last indices of the lists that are longer than 14.
+Write a program that prints the length of all the lists. If they do NOT all consist of 14 indices only, use the approriate method to delete the last indices of the lists that are longer than 14. Then print them again to verify their new length.
 !esubex
 
 !bsubex
@@ -54,5 +73,101 @@ Using the length method from exercise b) can be helpful to make a flexible progr
 !esubex
 
 !bsubex
+Perform a list operation that prints the amount of the students from the lists that have the mean height, age, and weight.
+
 How many of the students actually report having the average height, age or weight? Does this tell us anything about means in general?
+!esubex
+
+===== Exercise: Temperature over 24 hours =====
+
+!bsubex
+The file `tempfile.csv` contains 16 hours of temperature data measured in a small room during winter. Import the file as a list (array) and determine the mean temperature over 16 hours from the data.
+!esubex
+
+!bsubex
+How often was the temperature sampled over the 16 hours of measurement?
+!esubex
+
+!bsubex
+The file `timefile.csv` contains a simplified version of the time data for the temperature measurements. The data lists the number of minutes since the first measurement was made and it is synchronized to the temperature readings. Import the file `timefile.csv` and plot the contents of the file `tempfile.csv` against the time data.
+!esubex
+
+===== Exercise: Counting corn kernels =====
+
+
+# This is a very common laboratory exercise for early courses in
+# biology. It is best presented in the context of basic mendelian
+# genetics. Typically, the students count some kernels on corn
+# cobs and extrapolate the trend to the whole cob. They can
+# then make basic inference about the genotypes of the individual
+# seeds with respect to singe color coding genes.
+
+One major advantage to using code is that large datasets can be processed in only a fraction of the time it would take to do such work manually. Counting large lists of digital data is an example of this.
+
+=== Corn ===
+
+*Zea mays*, also known as corn, is a cereal plant in the family of grasses. Although heavily influenced by human breeding, it retains import traits similar to other grasses. One of these traits is that a single plant produces a number of densely packed flowers which each undergo fertilization separate from each other. This allows for interesting displays of mendelian principles in cases where the genes that code for kernel color in the male pollen are different from those of the female plant. One way this can play out is by the formation of a corn cob in which the different kernels have different colors.
+
+#https://commons.wikimedia.org/wiki/File:Corncobs.jpg
+#Copyright Sam Fentress 2005 Wikimedia common license
+FIGURE:[corncobswikifree.jpg, width=600 frac=0.8]
+
+!bsubex
+6 files named cornkernels1.csv - cornkernels6.csv contain information about the color of kernels on four separate cobs of corn. Write a program that loads the information from the files into 6 separate lists (arrays).
+!esubex
+
+!bsubex
+If we make simple assumptions about observed colors, such as that only variation in a single gene impacts the color of the kernels, and that the corn cob we are looking at has only been fertilized by a single male plant, we can infer certain properties of the two plants involved (male and female).
+
+Add a counting step to your program, where it counts the number of yellow and purple kernels in your 6 corn cobs as well as the total number of kernels on each cob.
+!bhint
+`loadtxt` creates an array in which you can not count values using the `N.count()` method. In this case, it can be solved by converting the array to a list using the following syntax:
+`mylist = numpy.array(myarray).tolist()`. Where `mylist` is the name of your new list, and `myarray` is the name of the imported array.
+!ehint
+!esubex
+
+!bsubex
+Finally, have your program calculate the ratios between amount of kernels with the two colors, and the total amount of kernels on each corn cob.
+
+!bhint
+If you check the internet for a punnet square depicting a monohybrid crossing, you should be able to guess whether each cob is the result of a cross between hetero- or homozygotic parents.
+!ehint
+!esubex
+
+
+===== Exercise: List arithmetics =====
+
+!bsubex
+Create the following lists:
+!bc pycod
+list1 = [35, 45, 11, 9, 4.5, 6, 91, 18, 45, 54, 3.4, 95.1, 17.4, 19.9, 71.5]
+list2 = [90, 11, 23, 60, 1, 2, 1, 17, 50, 13, 29]
+!ec
+!esubex
+
+!bsubex
+Use Python to compare the lengths of the two lists. Make a variable that is equal to the difference in length between `list1` and `list2` and print it to the screen.
+!esubex
+
+!bsubex
+Sort `list1` according to size starting with the smallest value.
+Sort `list2` according to size, starting with the largest value.
+
+!bhint
+Sorting `list2` may require more than one operation.
+!ehint
+!esubex
+
+!bsubex
+Using python, delete the first index in `list1` and test again with your difference variable whether the lists are of equal length.
+!esubex
+
+!bsubex
+If necessary, delete the amount of indices from `list1` necessary to make the lists of equal length. Delete these indices from the end of the list.
+!esubex
+
+!bsubex
+Add the values 56.2 and 99 to the end of `list1`.
+Add the value -87 to the end of `list2`.
+What is the ratio of the sums of the lists?
 !esubex

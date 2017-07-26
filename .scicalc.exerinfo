@@ -165,7 +165,30 @@
                      'converts a given amount of joules to calories and prints '
                      'the result. Also, make a calculator that converts '
                      'calories to joules.'},
-            {'answer': '',
+            {'aftertext': '\n'
+                          '=== Camels ===\n'
+                          '\n'
+                          'Contrary to popular belief, animals of the genus '
+                          '*camelus*, such as camels and dromedarys, do not '
+                          'carry volumes of water in the "humps" on their '
+                          'backs. Although it is indeed true that they can '
+                          'drink and store large amounts of water, and survive '
+                          'for a long time without drinking, camels deal with '
+                          'the heat in much more interesting ways than one '
+                          'might expect. Two important adaptations in camels '
+                          'in order to deal with heat are a large body with '
+                          'concentrated fatty deposits in the "humps", and a '
+                          'high tolerance for changes in body temperature. The '
+                          'fat acts as a buffer that soaks thermal energy, '
+                          'causing the temperature rise in the body as a whole '
+                          'to be quite slow; there is simply a lot of body to '
+                          'heat up! During cold desert nights, the effect is '
+                          'reversed and the body is cooled more slowly than in '
+                          'a smaller and leaner body. Allowing themselves to '
+                          'be heated also reduces the thermal gradient against '
+                          'the environment, and thus the heating slows as the '
+                          "camel's body temperature rises.\n",
+             'answer': '',
              'file': None,
              'hints': [],
              'solution': '',
@@ -190,25 +213,7 @@
                        'total amount of calories for the whole day in order to '
                        'simplify your calculations.'],
              'solution': '',
-             'text': 'Contrary to popular belief, animals of the genus '
-                     '*camelus*, such as camels and dromedarys, do not carry '
-                     'water in the "humps" on their backs. Although it is '
-                     'indeed true that they can drink and store large amounts '
-                     'of water, and survive for a long time without drinking, '
-                     'camels deal with the heat in much more interesting ways '
-                     'than one might expect. Two important adaptations in '
-                     'camels in order to deal with heat are a large body with '
-                     'concentrated fatty deposits in the "humps", and a high '
-                     'tolerance for changes in body temperature. The fat acts '
-                     'as a buffer that soaks thermal energy, causing the '
-                     'temperature rise in the body as a whole to be quite '
-                     'slow. During cold desert nights, the effect is reversed '
-                     'and the body is cooled more slowly. Allowing themselves '
-                     'to be heated reduced the thermal gradient against the '
-                     "environment, and thus the heating slows once the camel's "
-                     'body temperature rises.\n'
-                     '\n'
-                     'Assume that a camel of 470kg receives a net heat gain '
+             'text': 'Assume that a camel of 470kg receives a net heat gain '
                      'averaging 90 $\\frac{joules}{second}$ throughout a day '
                      'lasting 13.5 hours. Our camel consists of 55% water, and '
                      'we will assume that the water is the only thing that '

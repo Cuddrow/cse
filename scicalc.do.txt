@@ -1,3 +1,5 @@
+# Made by Hallvard Heiberg for the course BIOS1100
+
 ===== Exercise: operations with variables =====
 label{ex:calculations}
 keywords=basic; variables
@@ -74,9 +76,11 @@ The calorie is a very small unit, and although we in everyday speech indeed use 
 Write a program that can calculate how many joules are required to heat a full 10L bucket of water at sea level from 21 degrees celcius to boiling. Assume that the heat transfer is instantaneous, and that no heat is lost in the process.
 !esubex
 
-!bsubex
-Contrary to popular belief, animals of the genus *camelus*, such as camels and dromedarys, do not carry water in the "humps" on their backs. Although it is indeed true that they can drink and store large amounts of water, and survive for a long time without drinking, camels deal with the heat in much more interesting ways than one might expect. Two important adaptations in camels in order to deal with heat are a large body with concentrated fatty deposits in the "humps", and a high tolerance for changes in body temperature. The fat acts as a buffer that soaks thermal energy, causing the temperature rise in the body as a whole to be quite slow. During cold desert nights, the effect is reversed and the body is cooled more slowly. Allowing themselves to be heated reduced the thermal gradient against the environment, and thus the heating slows once the camel's body temperature rises.
+=== Camels ===
 
+Contrary to popular belief, animals of the genus *camelus*, such as camels and dromedarys, do not carry volumes of water in the "humps" on their backs. Although it is indeed true that they can drink and store large amounts of water, and survive for a long time without drinking, camels deal with the heat in much more interesting ways than one might expect. Two important adaptations in camels in order to deal with heat are a large body with concentrated fatty deposits in the "humps", and a high tolerance for changes in body temperature. The fat acts as a buffer that soaks thermal energy, causing the temperature rise in the body as a whole to be quite slow; there is simply a lot of body to heat up! During cold desert nights, the effect is reversed and the body is cooled more slowly than in a smaller and leaner body. Allowing themselves to be heated also reduces the thermal gradient against the environment, and thus the heating slows as the camel's body temperature rises.
+
+!bsubex
 Assume that a camel of 470kg receives a net heat gain averaging 90 $\frac{joules}{second}$ throughout a day lasting 13.5 hours. Our camel consists of 55% water, and we will assume that the water is the only thing that affects body temperature. The camel starts out in the morning at a body temperature of 35.5 degrees celcius. Write a python program that calculates the final body temperature at the end of the day.
 !bhint
 You can convert the amount of joules per second to a total amount of calories for the whole day in order to simplify your calculations.

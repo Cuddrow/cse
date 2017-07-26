@@ -1,0 +1,278 @@
+
+# Information about all exercises in the file listplot.do.txt.
+# The information can be loaded into a Python list of dicts by
+#
+# f = open('.listplot.exerinfo', 'r')
+# exer = eval(f.read())
+#
+[{'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': ['lists', 'basic', ''],
+  'label': 'ex:numbersinlists',
+  'no': 1,
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Create a list called `mylist` and store the numbers 0, 1 '
+                     'and 2 in it.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Use the print function to print the number 1 by calling '
+                     'the correct index from the list.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Expand the list by adding the numbers 4, 8, 16, 32, 64, '
+                     '128 and 256.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Use the appropriate code for finding what the index '
+                     'number of the value 64 is, and print it to the screen.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Sum all the elements in the list and print it to the '
+                     'screen.'}],
+  'text': '',
+  'title': 'Power of 2',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 2,
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Create the following lists and check that their lengths '
+                     'are equal.\n'
+                     '\n'
+                     '!bc pycod\n'
+                     'binary = [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, '
+                     '1024, 2048, 4096, 8192]\n'
+                     'power = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]\n'
+                     '\n'
+                     '!ec'},
+            {'aftertext': '\n',
+             'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Plot the `binary` list as a function of the `power` '
+                     'list. What trend do we observe?'}],
+  'text': '',
+  'title': 'Exponential plotting',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': ['lists', 'basic', 'statistics', ''],
+  'label': 'ex:meanfromlist',
+  'no': 3,
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'A group up students reported basic physical '
+                     'measurements. Create the following lists to store the '
+                     'information given:\n'
+                     '!bc pycod\n'
+                     'height = [176, 169, 172, 172, 179, 160, 157, 170, 190, '
+                     '154, 181, 185, 168, 184]\n'
+                     'age = [34, 33, 27, 31, 19, 34, 22, 28, 23, 32, 20, 20, '
+                     '24, 30, 21, 25]\n'
+                     'weight = [62, 46, 56, 52, 80, 51, 84, 65, 92, 55, 53, '
+                     '52, 84, 84, 61]\n'
+                     '\n'
+                     '!ec'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Write a program that prints the length of all the lists. '
+                     'If they do NOT all consist of 14 indices only, use the '
+                     'approriate method to delete the last indices of the '
+                     'lists that are longer than 14. Then print them again to '
+                     'verify their new length.'},
+            {'answer': '',
+             'file': None,
+             'hints': ['Name your variables in a way that makes their origin '
+                       'easy to identify. E.g `heightsum`, `agesum`, '
+                       '`weightsum`'],
+             'solution': '',
+             'text': 'Write the sums of all the values in each list to '
+                     'separate variables.'},
+            {'answer': '',
+             'file': None,
+             'hints': ['Using the length method from exercise b) can be '
+                       'helpful to make a flexible program.'],
+             'solution': '',
+             'text': 'Use the sums of the list indices to alculate the '
+                     'mean(average) height, age, and weight for this group of '
+                     'students.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Perform a list operation that prints the amount of the '
+                     'students from the lists that have the mean height, age, '
+                     'and weight.\n'
+                     '\n'
+                     'How many of the students actually report having the '
+                     'average height, age or weight? Does this tell us '
+                     'anything about means in general?'}],
+  'text': '',
+  'title': 'Simple statistics',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 4,
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'The file `tempfile.csv` contains 16 hours of temperature '
+                     'data measured in a small room during winter. Import the '
+                     'file as a list (array) and determine the mean '
+                     'temperature over 16 hours from the data.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'How often was the temperature sampled over the 16 hours '
+                     'of measurement?'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'The file `timefile.csv` contains a simplified version of '
+                     'the time data for the temperature measurements. The data '
+                     'lists the number of minutes since the first measurement '
+                     'was made and it is synchronized to the temperature '
+                     'readings. Import the file `timefile.csv` and plot the '
+                     'contents of the file `tempfile.csv` against the time '
+                     'data.'}],
+  'text': '',
+  'title': 'Temperature over 24 hours',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 5,
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': '6 files named cornkernels1.csv - cornkernels6.csv '
+                     'contain information about the color of kernels on four '
+                     'separate cobs of corn. Write a program that loads the '
+                     'information from the files into 6 separate lists '
+                     '(arrays).'},
+            {'answer': '',
+             'file': None,
+             'hints': ['`loadtxt` creates an array in which you can not count '
+                       'values using the `N.count()` method. In this case, it '
+                       'can be solved by converting the array to a list using '
+                       'the following syntax:\n'
+                       '`mylist = numpy.array(myarray).tolist()`.'],
+             'solution': '',
+             'text': 'If we make simple assumptions about color, such as that '
+                     'only variation in a single gene impacts the color of the '
+                     'kernels, and that the corn cob we are looking at has '
+                     'only been fertilized by a single male plant, we can '
+                     'infer certain properties of the two plants involved '
+                     '(male and female) when we study the ratios of kernel '
+                     'colors.\n'
+                     '\n'
+                     'Add a counting step to your program, where it counts the '
+                     'number of yellow and purple kernels in your 6 corn cobs '
+                     'as well as the total number of kernels on each cob.'},
+            {'answer': '',
+             'file': None,
+             'hints': ['If you check the internet for a punnet square '
+                       'depicting a monohybrid crossing, you should be able to '
+                       'guess whether each cob is the result of a cross '
+                       'between hetero- or homozygotic parents.'],
+             'solution': '',
+             'text': 'Finally, have your program calculate the ratios between '
+                     'amount of kernels with the two colors, and the total '
+                     'amount of kernels on each corn cob.'}],
+  'text': 'One major advantage to using code is that large datasets can be '
+          'processed in only a fraction of the time it would take to do such '
+          'work manually. Counting large lists of digital data is an example '
+          'of this.\n'
+          '\n'
+          '*Zea mays*, also known as corn, is a cereal plant in the family of '
+          'grasses. Although heavily influenced by human breeding, it retains '
+          'import traits similar to other grasses. One of these traits is that '
+          'a single plant produces a number of densely packed flowers which '
+          'each undergo fertilization separate from each other. This allows '
+          'for interesting displays of mendelian principles in cases where the '
+          'genes that code for kernel color in the male pollen are different '
+          'from those of the female plant. One way this can play out is by the '
+          'formation of a corn cob in which the different kernels have '
+          'different colors.\n'
+          '\n'
+          'FIGURE:[corncobswikifree.jpg, width=600 frac=0.8]',
+  'title': 'Counting corn kernels',
+  'type': 'Exercise',
+  'type_visible': True}]
