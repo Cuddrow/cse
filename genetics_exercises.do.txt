@@ -1,0 +1,38 @@
+===== Exercise: Basic looping and testing =====
+
+!bsubex
+Use a for loop to generate a list containing the numbers from 0 to 1000 in increments of 10.
+!esubex
+
+!bsubex
+Use a loop with an if test to write all values between 300 and 700 into a new list.
+!esubex
+
+!bsubex
+Use a loop to deduct the first index of your new list from all values in the list in order to make it run from 0 to 400.
+!esubex
+
+===== Exercise: Calculator toolbox =====
+
+In chapter 1 we used python to make a series of scientific calculators that made simple calculations for us. Review your calculators and define them as functions that you can copy into your programs. This will prepare your functions for an interesting concept introduced in the chapter about mutations.
+
+!bsubex
+Here are some examples of calculators that you might want to turn in to functions at this point:
+
+Length unit conversion
+Surface area calculation for different geometries
+Surface area unit conversion
+Volume calculation for different geometries
+Volume unit conversion
+Moles to number of molecules
+Concentrations expressed by different volumes (L, mL, $\muL, nL etc.)
+Concentrations expressed by different mass units (Kg, g, mg etc.)
+Premade plotting setups that take a number of lists and plots according to predefined color schemes.
+!esubex
+
+Do your own research in order to find functions you wish to add to your toolbox. You will eventually learn a very convenient way to add them any python program you write!
+
+
+===== Exercise: Inner thermostat =====
+
+Homeostasis is the management of a stable inner environment seen in all organisms. The amount of rigor with which an organism adheres to a very specific set of values varies from organisms that perform little regulation, to organisms that are very sensitive to change. Different organisms are equipped with sensory systems which report whether the inner and outer environments are within acceptable levels for whatever they are measuring. For instance, heat and cold can be damaging, and all organisms have an accepted range of temperatures within which they function optimally. We can im

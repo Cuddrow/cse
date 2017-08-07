@@ -1,0 +1,101 @@
+
+# Information about all exercises in the file growthmodeling.do.txt.
+# The information can be loaded into a Python list of dicts by
+#
+# f = open('.growthmodeling.exerinfo', 'r')
+# exer = eval(f.read())
+#
+[{'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 1,
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'answer': '',
+             'file': None,
+             'hints': ['Storing data from a pandas dataframe in an array can '
+                       'be done using `df.values`.\n'
+                       '\n'
+                       '!bc pycod\n'
+                       'from pylab import *\n'
+                       '\n'
+                       "myarray = mydataframe['myheader'].values\n"
+                       '\n'
+                       '\n'
+                       '!ec'],
+             'solution': '',
+             'text': 'The file `potatodata.csv` contains data from a real '
+                     'experiment. 9 roughly equal slices of a single potato '
+                     'were placed in solutions of sucrose ranging from 0M '
+                     '(distilled water) to 0.8M in 0.1M increments. The data '
+                     'file contains the initial weight (in grams) of the '
+                     'potato slices under the header *start*, the final weight '
+                     'of the potatoes (in grams) after 24 hours of immersion '
+                     'under the header *end*, and the concentration of the '
+                     'solution under the header *concentration*.\n'
+                     '\n'
+                     'Write a program that reads the data from this *.csv* '
+                     'file and stores it in three separate arrays.'},
+            {'answer': '',
+             'file': None,
+             'hints': ['The python package Matplotlib contains a large toolbox '
+                       'for shaping your plots the way you want them to look. '
+                       "Here's an example of code you can add to make your "
+                       'plot more intelligible.\n'
+                       '\n'
+                       '# Is this too much help?\n'
+                       '\n'
+                       '!bc pycod\n'
+                       'from pylab import *\n'
+                       '\n'
+                       'plot(myXarray, myYarray)\n'
+                       '#Sets [xmin, xmax, ymin, ymax]\n'
+                       'axis([-100, 100, -1000, 1000])\n'
+                       '\n'
+                       '#Creates a grid scale to the ticks of the plot\n'
+                       "grid(True, which='both')\n"
+                       '\n'
+                       '#Creates a black vertical line, and a black horizontal '
+                       'line, through the origin of the plot\n'
+                       "axhline(y=0, color='k')\n"
+                       "axvline(x=0, color='k')\n"
+                       '\n'
+                       'show()\n'
+                       '\n'
+                       '\n'
+                       '!ec'],
+             'solution': '',
+             'text': 'Have your program calculate the weight difference '
+                     'between the final and initial weights and plot them as a '
+                     'function of sucrose concentration. Add labels to each '
+                     'axis, and set the axis so the plot provides an intuitive '
+                     'view of what happens as concentrations change.'}],
+  'text': '*Water potential* is a term used to describe the osmotic tendencies '
+          "of a tissue. In other words, it describes the tissue's tendency to "
+          'take up, or give off, water. Although many factors affect the water '
+          'potential of the tissues of a living plant, the experiment '
+          'described here isolates some of the components. For an immersed '
+          'piece of plant tissue which has very little vertical distribution, '
+          'the main driving force for this transport is the difference in '
+          'concentration of osmolytes (osmotically contributing solutes) on '
+          'the inside and outside of the plant cells. Since substances such as '
+          'salts and sugars cannot readily penetrate the cell wall of the '
+          'plant cells, these concentrations tend *not* to equilibrate. Water, '
+          'however, can in a lot of circumstances move quite freely in and out '
+          'of cells. This has the implication that changing the concentration '
+          'of osmolytes around the plant will not change intracelllular '
+          'concentrations of these osmolytes, but will instead cause water to '
+          'diffuse in or out of the cell. Simply put, more osmolytes in the '
+          'extracellular solution leads to less water absorbtion by the plant, '
+          'and eventually to water loss.',
+  'title': 'Water potential in plant tissue',
+  'type': 'Exercise',
+  'type_visible': True}]

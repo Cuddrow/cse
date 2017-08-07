@@ -229,24 +229,52 @@
                      '(arrays).'},
             {'answer': '',
              'file': None,
-             'hints': ['`loadtxt` creates an array in which you can not count '
-                       'values using the `N.count()` method. In this case, it '
-                       'can be solved by converting the array to a list using '
-                       'the following syntax:\n'
-                       '`mylist = numpy.array(myarray).tolist()`.'],
+             'hints': ['In order to use methods applicable to lists, you need '
+                       'to convert your imported pandas dataframe to a list. '
+                       'Use your own variable names. Example:\n'
+                       '!bc pycod\n'
+                       'import pandas as pd\n'
+                       '\n'
+                       '#reads the file myfile.csv and labels the first and '
+                       "only column 'color'\n"
+                       "myfile = pd.read_csv('myfile1.csv', "
+                       "names=['Numbers'])\n"
+                       '\n'
+                       '# Creates a list called mylist containing all values '
+                       "within the column labeled 'Numbers' upon import\n"
+                       "mylist = (list(myfile['Numbers']))\n"
+                       '\n'
+                       '\n'
+                       '!ec'],
              'solution': '',
-             'text': 'If we make simple assumptions about color, such as that '
-                     'only variation in a single gene impacts the color of the '
-                     'kernels, and that the corn cob we are looking at has '
-                     'only been fertilized by a single male plant, we can '
-                     'infer certain properties of the two plants involved '
-                     '(male and female) when we study the ratios of kernel '
-                     'colors.\n'
+             'text': 'If we make simple assumptions about observed colors, '
+                     'such as that only variation in a single gene impacts the '
+                     'color of the kernels, and that the corn cob we are '
+                     'looking at has only been fertilized by a single male '
+                     'plant, we can infer certain properties of the two plants '
+                     'involved (male and female).\n'
                      '\n'
                      'Add a counting step to your program, where it counts the '
                      'number of yellow and purple kernels in your 6 corn cobs '
-                     'as well as the total number of kernels on each cob.'},
-            {'answer': '',
+                     'as well as the total number of kernels on each cob.\n'
+                     '\n'
+                     '\n'
+                     '# This hint was written to show students how to convert '
+                     'an array to a list in order to be able to use the count '
+                     'method. Transition to pandas calls for a different '
+                     'syntax.\n'
+                     '\n'
+                     '#!bhint\n'
+                     '#`loadtxt` creates an array in which you can not count '
+                     'values using the `N.count()` method. In this case, it '
+                     'can be solved by converting the array to a list using '
+                     'the following syntax:\n'
+                     '#`mylist = numpy.array(myarray).tolist()`. Where '
+                     '`mylist` is the name of your new list, and `myarray` is '
+                     'the name of the imported array.\n'
+                     '#!ehint'},
+            {'aftertext': '\n',
+             'answer': '',
              'file': None,
              'hints': ['If you check the internet for a punnet square '
                        'depicting a monohybrid crossing, you should be able to '
@@ -256,10 +284,19 @@
              'text': 'Finally, have your program calculate the ratios between '
                      'amount of kernels with the two colors, and the total '
                      'amount of kernels on each corn cob.'}],
-  'text': 'One major advantage to using code is that large datasets can be '
+  'text': '# This is a very common laboratory exercise for early courses in\n'
+          '# biology. It is best presented in the context of basic mendelian\n'
+          '# genetics. Typically, the students count some kernels on corn\n'
+          '# cobs and extrapolate the trend to the whole cob. They can\n'
+          '# then make basic inference about the genotypes of the individual\n'
+          '# seeds with respect to singe color coding genes.\n'
+          '\n'
+          'One major advantage to using code is that large datasets can be '
           'processed in only a fraction of the time it would take to do such '
           'work manually. Counting large lists of digital data is an example '
           'of this.\n'
+          '\n'
+          '=== Corn ===\n'
           '\n'
           '*Zea mays*, also known as corn, is a cereal plant in the family of '
           'grasses. Although heavily influenced by human breeding, it retains '
@@ -272,7 +309,118 @@
           'formation of a corn cob in which the different kernels have '
           'different colors.\n'
           '\n'
+          '#https://commons.wikimedia.org/wiki/File:Corncobs.jpg\n'
+          '#Copyright Sam Fentress 2005 Wikimedia common license\n'
           'FIGURE:[corncobswikifree.jpg, width=600 frac=0.8]',
   'title': 'Counting corn kernels',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 6,
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Create the following lists:\n'
+                     '!bc pycod\n'
+                     'list1 = [35, 45, 11, 9, 4.5, 6, 91, 18, 45, 54, 3.4, '
+                     '95.1, 17.4, 19.9, 71.5]\n'
+                     'list2 = [90, 11, 23, 60, 1, 2, 1, 17, 50, 13, 29]\n'
+                     '\n'
+                     '!ec'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Use Python to compare the lengths of the two lists. Make '
+                     'a variable that is equal to the difference in length '
+                     'between `list1` and `list2` and print it to the screen.'},
+            {'answer': '',
+             'file': None,
+             'hints': ['Sorting `list2` may require more than one operation.'],
+             'solution': '',
+             'text': 'Sort `list1` according to size starting with the '
+                     'smallest value.\n'
+                     'Sort `list2` according to size, starting with the '
+                     'largest value.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Using python, delete the first index in `list1` and test '
+                     'again with your difference variable whether the lists '
+                     'are of equal length.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'If necessary, delete the amount of indices from `list1` '
+                     'necessary to make the lists of equal length. Delete '
+                     'these indices from the end of the list.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Add the values 56.2 and 99 to the end of `list1`.\n'
+                     'Add the value -87 to the end of `list2`.\n'
+                     'What is the ratio of the sums of the lists?'}],
+  'text': '',
+  'title': 'List arithmetics',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 7,
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Make a calculator that converts a molar concentration of '
+                     'protons ($H_3O^+$) into a pH number.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Avogadros number is $6.022*10{23}$ and is also the '
+                     'definition of the amount of units in a mole. This means '
+                     'that 1 mole of protons is equal to '
+                     '$6.022*10{23}$protons. Have your program convert a pH '
+                     "value to it's exact number of protons."},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': '',
+             'text': 'Import the files *phvalues.csv* and *concentrations.csv* '
+                     'into a python program, and plot the ph as a function of '
+                     'the concentration. pH is a number with no unit, and '
+                     'concentration is given in molar (moles per liter)'}],
+  'text': 'pH is defined in the following way:\n'
+          '$ pH = -log_{10}[H^+]$ where $[H^+]$ is the concentration of '
+          'hydronium ions: $H_3O^+$ or more simply: the concentration of $H^+$ '
+          'found in solution.',
+  'title': 'Power of hydrogen',
   'type': 'Exercise',
   'type_visible': True}]

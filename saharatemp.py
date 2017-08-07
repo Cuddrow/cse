@@ -15,32 +15,33 @@ def plotter(templist, timelist):
     legend(loc='upper left')
     show()
 
-starting_temp = 17
-templist[0] = starting_temp
-templist[1] = templist[0]+0.68
-mod_8_16 = 0.2
-mod_2030_2230 = 0.5
-for i in range(2,96,1):
-    # From 08:00 to 16:00 - 32 steps - try increase of 0.68 per 15 minutes
-    if i <= 32:
-        templist[i] = (templist[i-1]+0.75)-((i/32)*mod_8_16)
-    # From 16:00 to 18:00 - 8 steps
-    elif i > 32 and i <= 40:
-        templist[i] = templist[i-1] + rd.uniform(-0.2,0.2)
-    # From 18 to 20:30 - 10 steps
-    elif i > 40 and i <= 50:
-        templist[i] = (templist[i-1] - 0.4)
-    # From 20:30 to 22:30 - 10 steps - try reduction of 0.875 per 15 minutes
-    elif i > 50 and i <= 60:
-        templist[i] = templist[i-1] - (0.875+(rd.uniform(-0.2,0.2)))
-    # From 22:30 to 08:00 - 38 steps
-    elif i > 60:
-        templist[i] = templist[i-1] - (0.26+(rd.uniform(-0.05,0.05)))
+def tempgenerator():
+    starting_temp = float(input("Input starting temperature"))
+    templist[0] = starting_temp
+    templist[1] = templist[0]+0.68
+    mod_8_16 = 0.2
+    mod_2030_2230 = 0.5
+    for i in range(2,96,1):
+        # From 08:00 to 16:00 - 32 steps - try increase of 0.68 per 15 minutes
+        if i <= 32:
+            templist[i] = (templist[i-1]+0.75)-((i/32)*mod_8_16)
+        # From 16:00 to 18:00 - 8 steps
+        elif i > 32 and i <= 40:
+            templist[i] = templist[i-1] + rd.uniform(-0.2,0.2)
+        # From 18 to 20:30 - 10 steps
+        elif i > 40 and i <= 50:
+            templist[i] = (templist[i-1] - 0.4)
+        # From 20:30 to 22:30 - 10 steps - try reduction of 0.875 per 15 minutes
+        elif i > 50 and i <= 60:
+            templist[i] = templist[i-1] - (0.875+(rd.uniform(-0.2,0.2)))
+        # From 22:30 to 08:00 - 38 steps
+        elif i > 60:
+            templist[i] = templist[i-1] - (0.26+(rd.uniform(-0.05,0.05)))
 
-for index, temp in enumerate(templist):
-    print(index,round(temp,3))
+#for index, temp in enumerate(templist):
+#    print(index,round(temp,3))
 
-print("Temperature at tick 60: " + str(templist[59]))
+
 
 plotter(templist,timelist)
 save_array = [templist, timelist]

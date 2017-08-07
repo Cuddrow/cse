@@ -1,0 +1,132 @@
+===== Exercise: Water potential in plant tissue =====
+
+*Water potential* is a term used to describe the osmotic tendencies of a tissue. In other words, it describes the tissue's tendency to take up, or give off, water. Although many factors affect the water potential of the tissues of a living plant, the experiment described here isolates some of the components. For an immersed piece of plant tissue which has very little vertical distribution, the main driving force for this transport is the difference in concentration of osmolytes (osmotically contributing solutes) on the inside and outside of the plant cells. Since substances such as salts and sugars cannot readily penetrate the cell wall of the plant cells, these concentrations tend *not* to equilibrate. Water, however, can in a lot of circumstances move quite freely in and out of cells. This has the implication that changing the concentration of osmolytes around the plant will not change intracelllular concentrations of these osmolytes, but will instead cause water to diffuse in or out of the cell. Simply put, more osmolytes in the extracellular solution leads to less water absorbtion by the plant, and eventually to water loss.
+
+!bsubex
+The file `potatodata.csv` contains data from a real experiment. 9 roughly equal slices of a single potato were placed in solutions of sucrose ranging from 0M (distilled water) to 0.8M in 0.1M increments. The data file contains the initial weight (in grams) of the potato slices under the header *start*, the final weight of the potatoes (in grams) after 24 hours of immersion under the header *end*, and the concentration of the solution under the header *concentration*.
+
+Write a program that reads the data from this *.csv* file and stores it in three separate arrays.
+
+!bhint
+Storing data from a pandas dataframe in an array can be done using `df.values`.
+
+!bc pycod
+from pylab import *
+
+myarray = mydataframe['myheader'].values
+
+!ec
+
+!ehint
+
+!esubex
+
+!bsubex
+Have your program calculate the weight difference between the final and initial weights and plot them as a function of sucrose concentration. Add labels with units to each axis, and set the axis so the plot provides an intuitive view of what happens as concentrations change.
+
+!bhint
+The python package Matplotlib contains a large toolbox for shaping your plots the way you want them to look. Here's an example of code you can add to make your plot more intelligible.
+
+# Is this too much help?
+
+!bc pycod
+from pylab import *
+
+plot(myXarray, myYarray)
+#Sets [xmin, xmax, ymin, ymax]
+axis([-100, 100, -1000, 1000])
+
+#Creates a grid scale to the ticks of the plot
+grid(True, which='both')
+
+#Creates a black vertical line, and a black horizontal line, through the origin of the plot
+axhline(y=0, color='k')
+axvline(x=0, color='k')
+
+show()
+
+!ec
+!ehint
+!esubex
+
+!bsubex
+Use the graph you have made to estimate at approximately what concentration of sucrose the fluid outside the cells is in equilibrium with the intracellular fluid. Can this tell us anything about the concentration of osmolytes inside the cells?
+!esubex
+
+
+===== Exercise: Multiplication tables =====
+
+!bsubex
+Use a For loop to create an array containing numbers 1 to 10.
+
+!bhint
+Since many list operations can not be used on arrays, you can start your data out as a list and convert to an array when you see fit.
+!ehint
+!esubex
+
+!bsubex
+Use your array and a For loop to sequentially print the multiplication tables for all numbers from 1 to 20.
+!esubex
+
+===== Exercise: Arrays and list operations =====
+
+!bsubex
+Although arrays and lists are similar, not all basic list operations can be performed on arrays. However, converting between the two in order to do an operation is possible (although not necessarily the best solution).
+
+Create the following list as an array:
+!bc pycod
+numbers = [10, 8, 6, 4, 2, 0]
+!ec
+
+Now use a For loop to append the values 2, 4, 6, 8, 10 to your array.
+!esubex
+
+!bsubex
+Use array multiplication to double all values in your array. Print your array and verify that it is symmetrical.
+!esubex
+
+!bsubex
+As an extra measure of the symmetry of the array, use a For loop to create a list containing the numbers 1 to 11 in increments of 1. Plot your `numbers` array as a function of your newly created list.
+!esubex
+
+===== Exercise: Venom kinetics of Black Widow spider =====
+
+The three spider species of the genus *Lactrodectus*; *L.mactans*, *L. variolus* and *L. hesperus* are commonly grouped together and called "black widows". They serve as icons of venomous animals and are among the most well-known and feared spiders in the world. They are natives of the North American continent, and common to the genus is the black rounded body, and  the red/orange hourglass marking on the underside of the abdomen.
+
+FIGURE:[black_widow.jpg, width=600 frac=0.8]
+
+The venom consists of several components, but perhaps most distinct are the latrotoxins. These are protein neurotoxins that act through several different mechanisms such as forming pores in cell membranes which alter ion fluxes, and causing the release of muscle stimulating agents in nerve terminals.
+
+In this exercise, we will try to model the kinetics of a *Latrodectus* bite in three phases: The rising phase of venom concentration measured in a vein, the passive declining phase of venom concentration measured in a vein, and a declining phase in which the body actively eliminates the venom from the system. Unfortunately, precise information on half-lives, injected venom and absorption times are not known and we have to make a number of assumptions.
+
+
+!bsubex
+We imagine the venom to be injected into a vascularized tissue, but that it is not injected directly into venous blood. This leads to the formation of a venom reservoir in the tissue which leaks venom into a nearby vein. We will initially be modeling for 200 minutes at 5 minute intervals, and we will be modeling both the venous venom content, and the bite site venom content.
+We also make the following assumptions:
+
+The amount of venom injected is 0.05 mg.
+The bite site leaks 11% of its remaining venom to a vein each time step.
+Through passive processes 1% of the current venom in the blood is eliminated for each time step.
+
+Create the 3 necessary arrays, and use a variable to give them the exact length dictated by the time span. In addition, create the appropriate constants to model the venom diffusion process.
+!esubex
+
+!bsubex
+For the first 40 time steps, use a For loop to model the diffusion of venom from the bite site into the venous blood, make sure to have your difference equation take your constants into account. Make a plot showing the relationship between bite site venom and blood venom content.
+!esubex
+
+!bsubex
+After time step 40, we imagine that the body responds with some active process such as scavenging by macrophages or renal elimination. The elimination rate is now increased from 1% to 2%. Have your model take this into account for another 104 time steps.
+!esubex
+
+!bsubex
+The systemic envenomation that sometimes occurs from *Lactrodectus* bite usually takes about 2 hours to begin. What does our model say about blood venom levels at 2 hours?
+!esubex
+
+!bsubex
+What is the initial trend in venom dynamics? What happens as the growth slows? What happens as the active processes are included
+!esubex
+
+!bsubex
+What are strengths and weaknesses of a model such as this one?
+!esubex

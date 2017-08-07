@@ -1,13 +1,11 @@
-import random
-import numpy as np
 import pandas
 
-corncobimport = pandas.read_csv('cornkernels1.csv')
-print ("Contents of loadedlist: " + str(corncobimport))
-corncob = list(corncobimport)
-
-print(type(corncob))
-print(len(corncob))
+corncob = pandas.read_csv('cornkernels1.csv', names=['color'])
+corncob = (list(corncob['color']))
+print ("Contents of loadedlist: " + str(corncob))
 print(corncob)
-print("Amount of yellow kernels: " + str(corncob.count('yellow')))
-print("Amount of purple kernels: " + str(corncob.count('purple')))
+
+#print(type(corncob))
+#print(len(corncob))
+#print("Amount of yellow kernels: " + str(corncob.count('yellow')))
+#print("Amount of purple kernels: " + str(corncob.count('purple')))
